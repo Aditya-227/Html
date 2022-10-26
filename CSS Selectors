@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combination Selectors</title>
+    <style>
+        div,
+        span,
+        p {background-color:blueviolet;
+            font-size: 2rem;}
+        div {width: 300px;
+            height: 100px;
+            margin-bottom: 20px;}
+        span {font-weight: 200;
+            padding: 10px;}
+        a,
+        b,
+        p {background-color: magenta;
+            font-size: 2rem;}
+        a {width: 300px;
+            height: 100px;
+            margin-bottom: 20px;}
+        b {font-weight: 400;
+            padding: 10px;} 
+        li:hover {background-color: gray;
+            color: white;}
+        ul li {color: red;}
+        div strong {color: green;}
+        span>strong {color: green;}
+        ul>li {color: red;}
+        div.red.green {color: red;}
+        a {width: 300px;
+            height: 100px;
+            background-color: aqua;
+            margin-bottom: 20px;}
+        a:hover {cursor: pointer;
+            background-color:green;}
+    </style>
+</head>
+<body>
+    <h1>Combination Selectors</h1>
+    <div id="a"> Aditya Verma</div>
+    <div id="a"> Aditya Verma</div>
+    <span class="b">Verma Aditya</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nisi natus reiciendis, placeat dolore amet vel!
+     Facere dolor nobis dolorem. Inventore atque eligendi in rem voluptatem recusandae expedita vitae repellendus.
+    </p>
+    <div>
+        <span>
+            <strong>This is a bold Senetnce</strong>
+        </span>
+    </div>
+    <ul>
+        <li>This is List 1</li>
+        <li>This is List 2</li>
+        <li>This is List 3</li>
+        <li>This is List 4</li>
+        <li>This is List 5</li>
+    </ul>
+    <div class="red">
+        Btech CSE
+    </div>
+    <div class="red green">CSE326</div>
+    <span class="red">
+        CSE Btech
+    </span>
+</body>
+</html>
